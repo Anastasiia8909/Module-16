@@ -1,0 +1,18 @@
+class Customer:
+    def __init__(self,name,surname, city,):
+        self.name = name
+        self.surname = surname
+        self.city = city
+    def get_customer(self):
+        return f'"{self.name} {self.surname}. г {self.city}."'
+
+
+customer_1 = Customer('Иван', 'Петров', 'Москва')
+customer_2 = Customer('Владимир', 'Сидоров', 'СПб')
+customer_3 = Customer('Ольга', "Смирнова", "Омск")
+customer_4 = Customer("Сергей", "Клюев", "Калининград")
+customer_5 = Customer("Алина", "Петрова", "Псков")
+
+customer_list=[customer_1, customer_2, customer_3, customer_4, customer_5]
+for customer in customer_list:
+    print(customer.get_customer())
